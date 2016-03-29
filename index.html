@@ -1,0 +1,79 @@
+<HTML>
+    <HEAD>
+        <meta charset="utf-8">
+        <title>Formulário de Cadastro</title>
+    
+    </HEAD>
+
+
+    <body>
+        
+        
+        <form action="http://labs.edysegura.com/requests/" method="post">
+           
+            <div>
+                <h1>Informações Pessoais</h1>
+                 
+                <table>
+                
+                    <tr>
+                        <td><label>Nome:</label></td>
+                        <td><input type="text" name="firstname" maxlength="50"></td> 
+                    </tr>
+                    <tr>
+                        <td><label> Endereço:</label></td>
+                        <td><input type="text" name="adress" maxlength="100"><td>
+                    </tr>
+                    <tr>
+                        <td><label>Cidade:</label></td>
+                        <td><input type="text" name="city" maxlength="50"><td>
+                    </tr>
+                
+                </table>
+                
+            </div>
+          
+            
+            
+            
+            <div>
+                <h1>Histórico Médico</h1>
+                  <input type="checkbox" name="desease[]" value="Dengue">
+                  <label>Dengue</label><br>
+                  <input type="checkbox" name="desease[]" value="Zica">
+                  <label>Zica</label><br>
+                  <input type="checkbox" name="desease[]" value="Ebola">
+                   <label>Ebola</label><br>
+            
+            </div>
+            
+            <div>
+                <h1>Medicação Atual</h1>
+                  <h2>Utiliza algum medicamento?</h2>
+                
+                  <input type="radio" name="medicacao" value="Sim">
+                  <label>Sim</label><br>
+                  <input type="radio" name="medicacao" value="Não">
+                  <label>Não</label><br>
+                  <p/>
+                <textarea rows="6" cols="30"></textarea>
+             
+            
+            </div>
+            
+
+            <div>
+                <p>
+                    <input type="submit" value="Enviar">
+                </p>
+                 
+            </div>
+            
+            
+        </form>
+    
+    </body>
+
+
+
+</HTML>
