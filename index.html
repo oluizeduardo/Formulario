@@ -1,6 +1,7 @@
 <HTML>
     <HEAD>
         <meta charset="utf-8">
+        <link href="css/stylesheet.css" title="estilo" rel="stylesheet" type="text/css"/>
         <title>Formulário de Cadastro</title>
     
     </HEAD>
@@ -8,13 +9,14 @@
 
     <body>
         
+        <strong>Cadastro de Doentes de Pouso Alegre</strong>
         
         <form action="http://labs.edysegura.com/requests/" method="post">
            
             <div>
                 <h1>Informações Pessoais</h1>
                  
-                <table>
+                <table >
                 
                     <tr>
                         <td><label>Nome:</label></td>
@@ -28,9 +30,7 @@
                         <td><label>Cidade:</label></td>
                         <td><input type="text" name="city" maxlength="50"><td>
                     </tr>
-                
-                </table>
-                
+                </table>  
             </div>
           
             
@@ -38,12 +38,32 @@
             
             <div>
                 <h1>Histórico Médico</h1>
-                  <input type="checkbox" name="desease[]" value="Dengue">
-                  <label>Dengue</label><br>
-                  <input type="checkbox" name="desease[]" value="Zica">
-                  <label>Zica</label><br>
-                  <input type="checkbox" name="desease[]" value="Ebola">
-                   <label>Ebola</label><br>
+                
+                <table>
+                    <tr>
+                        <td>
+                        <input type="checkbox" name="desease[]" value="Dengue">
+                        </td>
+                        <td> <label>Dengue</label> </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                        <input type="checkbox" name="desease[]" value="Zica">
+                        </td>
+                        <td> <label>Zica</label> </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                        <input type="checkbox" name="desease[]" value="Ebola">
+                        </td>
+                        <td> <label>Ebola</label> </td>
+                    </tr>
+                    
+                </table>
+                
+
             
             </div>
             
